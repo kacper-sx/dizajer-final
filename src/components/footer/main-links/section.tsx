@@ -15,7 +15,7 @@ export function MainLinksSections({ name, href }: MainLinksType) {
         <Typography
           variant={'h4'}
           weight={'medium'}
-          className='text-dizajer-text border-b-2 border-dizajer-red max-w-max'
+          className='text-dizajer-text text-center decoration-dizajer-red underline underline-offset-8 max-w-max'
         >
           {name}
         </Typography>

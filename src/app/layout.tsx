@@ -19,7 +19,7 @@ export default function RootLayout({
         className={cn(
           karla.variable,
           prompt.variable,
-          'text-foreground font-sans flex bg-black justify-center'
+          'text-foreground font-sans flex bg-dizajer-black justify-center'
         )}
       >
         <Providers>

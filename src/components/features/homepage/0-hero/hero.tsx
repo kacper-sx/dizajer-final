@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import Background from './background/background'
 import Vector from './background/vector'
 import { AiOutlineArrowDown } from 'react-icons/ai'
+import Link from 'next/link'
 export default function Hero() {
   return (
     <div className='relative z-10 min-h-[800px]'>
@@ -34,12 +35,12 @@ export default function Hero() {
           >
             czyli najlepszy zespół po tej stronie piwonii
           </Typography>
-          <Button
-            variant={'desireCall'}
+          <Link
+            href='tel:+48 662 630 912'
             className='flex lg:mt-12 mt-8 lg:place-self-end w-max place-self-center'
           >
-            Call me maybe!
-          </Button>
+            <Button variant={'desireCall'}>Call me maybe!</Button>
+          </Link>
         </div>
         <AiOutlineArrowDown className='text-dizajer-yellow self-center w-16 h-24 animate-bounce' />
       </div>

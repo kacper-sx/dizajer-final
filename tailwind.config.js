@@ -28,6 +28,7 @@ module.exports = {
           green: 'var(--dizajer-green-hex)',
           black: 'var(--dizajer-black-hex)',
           brown: 'var(--dizajer-brown-hex)',
+          footer: 'var(--dizajer-footer-hex)',
         },
 
         background: 'hsl(var(--background))',

@@ -9,10 +9,10 @@ import { Socials } from './socials/socials'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col w-full px-5 lg:px-32'>
-      <div className='flex flex-col gap-10 lg:items-center items-start lg:justify-between lg:flex-row py-12 border-b-2 border-dizajer-text'>
-        <div className='flex flex-col lg:w-[40%] w-11/12 lg:gap-10 gap-6 items-center'>
-          <Link href={'/'} className=' place-self-center'>
+    <div className='flex flex-col w-full border-t-2 border-x-2 rounded-t-2xl border-dizajer-brown bg-black px-5 lg:px-32'>
+      <div className='flex flex-col gap-10 lg:items-center items-start lg:justify-between lg:flex-row py-12 border-b-2 border-dizajer-brown'>
+        <div className='flex flex-col lg:w-[40%] w-10/12 md:w-1/2 lg:gap-10 gap-6 items-center place-self-center'>
+          <Link href={'/'} className='place-self-center'>
             <Image
               id='image'
               src='/photos/logo.png'
@@ -25,26 +25,10 @@ export default function Footer() {
           </Link>
           <Socials />
         </div>
-        <div className='flex flex-col gap-3'>
-          <Typography
-            variant={'h3'}
-            weight={'semibold'}
-            className='text-dizajer-text'
-          >
-            Linki Ogólne
-          </Typography>
-          <MainLinks />
-        </div>
-        <div className='flex flex-col gap-3'>
-          <Typography
-            variant={'h3'}
-            weight={'semibold'}
-            className='text-dizajer-text'
-          >
-            Główny Kontakt
-          </Typography>
-          <MainContact />
-        </div>
+        <div className='hidden lg:flex w-[2px] bg-dizajer-brown h-full'></div>
+        <MainLinks />
+        <div className='hidden lg:flex w-[2px] bg-dizajer-brown h-full'></div>
+        <MainContact />
       </div>
 
       <BottomFooter />

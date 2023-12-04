@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           'bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90',
         desireCall:
-          'bg-gradient-to-r from-dizajer-red to-dizajer-yellow text-black text-xl font-bold rounded-12',
+          'bg-gradient-to-r from-dizajer-red to-dizajer-yellow text-black text-xl font-bold rounded-2xl',
       },
       size: {
         default: 'lg:px-6 lg:py-4 px-3 py-2',
@@ -32,10 +32,11 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
+  href?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, href, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
